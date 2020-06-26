@@ -5,6 +5,7 @@
 See Projects tab for step-wise project workflow.
 
 
+
 ## Normalisation Rules for Relational Databases (ACID rules)
 
 **First Normal Form (1NF):** A table is 1NF if every cell contains a single value, not a list of values. This properties is known as atomic. 1NF also prohibits repeating group of columns such as item1, item2,.., itemN. Instead, you should create another table using one-to-many relationship.
@@ -20,7 +21,8 @@ For example, the primary key of the Tweets table comprising _id_ and _user_id_. 
 We may decide to break some of the normalisation rules, for performance reason (e.g., create a column called totalTweets in User table which can be derived from another table's records); or because the end-user 'requested' for it. But make sure to properly document the decision.
 
 
-### Integrity Rules
+
+## Integrity Rules
 You should also apply the integrity rules to check the integrity of your design:
 
 **Entity Integrity Rule:** The primary key cannot contain NULL. Otherwise, it cannot uniquely identify the row. For composite key made up of several columns, none of the column can contain NULL. Most of the RDBMS check and enforce this rule.
